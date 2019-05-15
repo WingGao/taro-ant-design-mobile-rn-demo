@@ -5,7 +5,8 @@
   "description": "Taro native shell",
   "scripts": {
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
-    "test": "jest"
+    "test": "jest",
+    "dev:android": "react-native run-android"
   },
   "repository": {
     "type": "git",

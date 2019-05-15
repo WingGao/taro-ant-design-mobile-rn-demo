@@ -1,3 +1,5 @@
+const path = require('path')
+
 const config = {
   projectName: 'listener-app',
   date: '2019-5-15',
@@ -23,6 +25,9 @@ const config = {
         'transform-object-rest-spread'
       ]
     }
+  },
+  alias: {
+    'antd-mobile-rn': path.resolve(__dirname, '..', 'ant-design-mobile-rn/components'),
   },
   defineConstants: {
   },

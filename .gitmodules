@@ -1,3 +1,3 @@
-[submodule "ant-design-mobile-rn"]
+[submodule ".rn_temp/ant-design-mobile-rn"]
 	path = .rn_temp/ant-design-mobile-rn
 	url = git@github.com:WingGao/ant-design-mobile-rn.git

@@ -2,7 +2,7 @@ import { ComponentClass } from 'react'
 import Taro, { Component, Config } from '@tarojs/taro'
 import { View, Text } from '@tarojs/components'
 import { connect } from '@tarojs/redux'
-import { Button } from 'antd-mobile-rn'
+import { Button } from '@ant-mobile-taro'
 
 import { add, minus, asyncAdd } from '../../actions/counter'
 

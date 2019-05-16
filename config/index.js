@@ -27,7 +27,7 @@ const config = {
     }
   },
   alias: {
-    'antd-mobile-rn': path.resolve(__dirname, '..', 'ant-design-mobile-rn/components'),
+    // '@ant-mobile-taro': path.resolve(__dirname, '..', 'ant-design-mobile-rn/components'),
   },
   defineConstants: {
   },
@@ -96,7 +96,12 @@ const config = {
         }
       }
     }
-  }
+  },
+  rn: {
+    alias: {
+      // '@ant-mobile-taro': path.resolve(__dirname, '..', '.rn_temp/ant-design-mobile-rn/components'),
+    }
+  },
 }
 
 module.exports = function (merge) {

@@ -24,5 +24,10 @@
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
     "tslib": "^1.8.0"
+  },
+  "devDependencies": {
+    "babel-plugin-import": "^1.11.0",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "metro-react-native-babel-preset": "^0.54.1"
   }
 }

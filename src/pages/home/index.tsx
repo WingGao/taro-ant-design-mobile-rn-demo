@@ -1,6 +1,6 @@
 import { ComponentClass } from 'react'
 import Taro, { Component, Config } from '@tarojs/taro'
-import { View, Text } from '@tarojs/components'
+import { View, Text, } from '@tarojs/components'
 import { connect } from '@tarojs/redux'
 import { Button } from '@ant-mobile-taro'
 
@@ -76,12 +76,16 @@ class Index extends Component {
 
   componentDidHide () { }
 
+  test = ()=>{
+      console.log('test click')
+  }
   render () {
     return (
       <View className='index'>
-        <Button className='add_btn' onClick={this.props.add}>+12</Button>
-        <Button className='dec_btn' onClick={this.props.dec}>-</Button>
-        <Button className='dec_btn' onClick={this.props.asyncAdd}>async</Button>
+        <Button className='add_btn' onPress={this.props.add}>+123</Button>
+        <Button className='dec_btn' onPress={this.props.dec}>-</Button>
+        <Button className='dec_btn' onPress={this.props.asyncAdd} type='ghost'>async</Button>
+        <Button className='dec_btn' onPress={this.test} type='primary' >test</Button>
         <View><Text>{this.props.counter.num}</Text></View>
         <View><Text>Hello, World</Text></View>
       </View>
